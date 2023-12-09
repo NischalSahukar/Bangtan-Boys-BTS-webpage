@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Verification</title>
+</head>
+<style>
+header {
+  background-color:  #E0B0FF;
+  padding: 6px;
+  text-align: center;
+  font-size: 20px;
+}
+body {
+  font-family: Merriweather;
+  background-color: #caa7ee;
+}
+input[type=text], input[type=password] { 
+        width: 40%; 
+        margin: 8px 0;
+        padding: 12px 20px; 
+        display: inline-block; 
+        border: 2px solid purple; 
+        box-sizing: border-box; 
+    }
+.button { 
+  background-color: #4e1395;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+} 
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #6631a6;
+}
+
+.button1:hover {
+  background-color: #6631a6;
+  color: rgb(220, 177, 234);
+}
+div.outset {
+        border-style: outset;
+        background-color: #CF9FFF;
+}
+.mySlides {display:none;}
+h1 {
+  text-shadow: 1px 1px 2px black, 0 0 25px #DA70D6, 0 0 5px #BF40BF;
+}
+p {
+  background-color: #b842d6;
+  padding: 10px;
+  display: none;
+}
+span:hover + p {
+  display: block;
+}
+</style>
+<body>
+    <center>
+    <h1 style="font-family: Algerian"><font color= "purple"; size="20 pt">BTS Login Page </font></h1>
+    <input type="text" placeholder="Enter your name"><br>
+    <input type="password" id="passwordInput" placeholder="Enter any BTS song"><br>
+    <button onclick="checkPassword()" class="button
+    button1">Submit</button><br><br><br>
+    <div class= "w3-content w3-section" style="max-width:500px">
+        <img class="mySlides" src="C:\Users\nisch\Downloads\51a1fb934d5deb618c78772d223d6727.gif" style="width:100%">
+        <img class="mySlides" src="C:\Users\nisch\Downloads\FYWzx_.gif" style="width:100%">
+        <img class="mySlides" src="C:\Users\nisch\Downloads\6GVN7D.gif" style="width:100%">
+        <img class="mySlides" src="C:\Users\nisch\Downloads\bts-spinebreaker.gif" style="width:100%">
+        <img class="mySlides" src="C:\Users\nisch\Downloads\G_vi60.gif" style="width:100%">
+        <img class="mySlides" src="C:\Users\nisch\Downloads\44269674cf1b0a6249116e6ce63c0061.gif" style="width:100%">
+        <img class="mySlides" src="C:\Users\nisch\Downloads\68747470733a2f2f7.gif" style="width:100%">
+        <img class="mySlides" src="C:\Users\nisch\Downloads\d9k627f-7e4a2402-5f97-44b4-9497-8479753703fb.gif" style="width:100%">
+        <img class="mySlides" src="C:\Users\nisch\Downloads\dope-bts.gif" style="width:100%">
+        <img class="mySlides" src="C:\Users\nisch\Downloads\bts-bts-fire.gif" style="width:100%">
+        <img class="mySlides" src="C:\Users\nisch\Downloads\blood-sweat-and-tears-bts.gif" style="width:100%">
+        <img class="mySlides" src="C:\Users\nisch\Downloads\68747470733a2.gif" style="width:100%">
+        <img class="mySlides" src="C:\Users\nisch\Downloads\dcb64d50db96.gif" style="width:100%">
+        <img class="mySlides" src="C:\Users\nisch\Downloads\4ad2e57af232bf2128bdcf86bb497663.gif" style="width:100%">
+        <img class="mySlides" src="C:\Users\nisch\Downloads\bts-fake-love.gif" style="width:100%">
+        <img class="mySlides" src="C:\Users\nisch\Downloads\892b4a0be67e5d2d5a248bf800fca3cc.gif" style="width:100%">
+        <img class="mySlides" src="C:\Users\nisch\Downloads\bts-idol (1).gif" style="width:100%">
+        <img class="mySlides" src="C:\Users\nisch\Downloads\8d5d7369e21c8b656d2030cb28bd5d19.gif" style="width:100%">
+        <img class="mySlides" src="C:\Users\nisch\Downloads\download_1580281583187.gif" style="width:100%">
+        <img class="mySlides" src="C:\Users\nisch\Downloads\2de1050dd36cfa082ac9de33cd91314d.gif" style="width:100%">
+        <img class="mySlides" src="C:\Users\nisch\Downloads\3ef1296f2bcc32f9bf963060d9cf20a8.gif" style="width:100%">
+        <img class="mySlides" src="C:\Users\nisch\Downloads\YBvKFd.gif" style="width:100%">
+        <img class="mySlides" src="C:\Users\nisch\Downloads\bts-run-bts.gif" style="width:100%">
+      </div>
+      <span>Hint:</span>
+      <p>
+        7-1=0<br>
+        Start with Caps and leave the spaces.
+      </p>
+      <script>
+        var myIndex = 0;
+        carousel();
+        function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+    </script>
+    <script src="script.js"></script>
+    </center>
+</body>
+</html>
